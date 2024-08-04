@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from './components/NavBar';
-import Hero from './components/Hero';
+import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -27,7 +27,7 @@ function App() {
     <ThemeProvider darkMode={darkMode}>
       <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
         <NavBar toggleDarkMode={toggleDarkMode} />
-        <Hero />
+        <Home />
         <About />
         <Projects />
         <Contact />
