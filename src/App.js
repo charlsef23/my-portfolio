@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
+import { ThemeProvider } from './theme';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('darkMode');
+    if (savedTheme) {
+      setDarkMode(JSON.parse(savedTheme));
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    localStorage.setItem('darkMode', JSON.stringify(!darkMode));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider darkMode={darkMode}>
+      <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+        <NavBar toggleDarkMode={toggleDarkMode} />
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
