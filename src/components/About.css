@@ -1,70 +1,97 @@
-.about{
-    background-color: #1e2326;
+.about {
+    background-color: #1e2326; /* Fondo oscuro para el modo oscuro */
     color: #fff;
     padding: 50px 20px;
-}
-.about .contenido-seccion{
+  }
+  
+  .about.light-mode {
+    background-color: #f0f0f0; /* Fondo claro para el modo claro */
+    color: #333;
+  }
+  
+  .about .contenido-seccion {
     max-width: 1100px;
     margin: auto;
-}
-.about h2{
+  }
+  
+  .about h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
-
-}
-.about .contenido-seccion p{
-    font: 18px;
+  }
+  
+  .about p {
+    font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
-}
-.about .contenido-seccion p span{
+  }
+  
+  .about p span {
     color: #1CB698;
     font-weight: bold;
-}
-.about .fila{
+  }
+  
+  .about .fila {
     display: flex;
-}
-.about .fila .col
-{
-    width: 50%;
-}
-.about .fila .col h3{
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+  }
+  
+  .about .fila .col {
+    flex: 1;
+    min-width: 300px; /* Asegura que las columnas no se reduzcan demasiado */
+    margin-right: 20px;
+  }
+  
+  .about .fila .col:last-child {
+    margin-right: 0; /* Elimina el margen derecho en la última columna */
+  }
+  
+  .about .fila .col h3 {
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     margin-bottom: 25px;
-}
-.about .fila .col ul{
+  }
+  
+  .about .fila .col ul {
     list-style: none;
-}
-.about .fila .col ul li{
+  }
+  
+  .about .fila .col ul li {
     margin: 12px 0;
-}
-.about .fila .col ul li strong{
+  }
+  
+  .about .fila .col ul li strong {
     display: inline-block;
     color: #1CB698;
     width: 130px;
-}
-.about .fila .col ul li a{
-        color: inherit;
-        text-decoration: none;
-}
-.about .fila .col ul li a:hover {
-        color: #1CB698; 
-        text-decoration: underline; 
-    }
-.about .fila .col ul li span{
+  }
+  
+  .about .fila .col ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .about .fila .col ul li a:hover {
+    color: #1CB698;
+    text-decoration: underline;
+  }
+  
+  .about .fila .col ul li span {
     background-color: #1CB698;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
-}
-.about .fila .col .contenedor-intereses{
+  }
+  
+  .about .fila .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
-}
-.about .fila .col .contenedor-intereses .interes{
+    justify-content: flex-start; /* Alinea los intereses a la izquierda */
+  }
+  
+  .about .fila .contenedor-intereses .interes {
     width: 100px;
     height: 100px;
     background-color: #252A2E;
@@ -75,17 +102,26 @@
     align-items: center;
     justify-content: center;
     transition: .3s;
-}.about .fila .col .contenedor-intereses .interes:hover{
+  }
+  
+  .about .fila .contenedor-intereses .interes:hover {
     background-color: #1CB698;
-}
-.about .fila .col .contenedor-intereses .interes i{
+  }
+  
+  .about .fila .contenedor-intereses .interes i {
     font-size: 30px;
     margin-bottom: 10px;
-}
-.about button{
+    color: #fff; /* Color de los iconos en modo oscuro */
+  }
+  
+  .about.light-mode .fila .contenedor-intereses .interes i {
+    color: #333; /* Color de los iconos en modo claro */
+  }
+  
+  .about button {
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
+    background-color: #1CB698; /* Fondo del botón */
+    border: 2px solid #1CB698; /* Borde del botón */
     width: fit-content;
     display: block;
     margin: 20px auto;
@@ -94,8 +130,11 @@
     color: #fff;
     position: relative;
     z-index: 10;
-}
-.about button .overlay{
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .about button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -104,7 +143,13 @@
     background-color: #1CB698;
     z-index: -1;
     transition: 1s;
-}
-.about button:hover .overlay{
+  }
+  
+  .about button:hover .overlay {
     width: 100%;
-}
+  }
+  
+  .about button:hover {
+    background-color: #1a9d87; /* Fondo más oscuro para el botón al pasar el ratón */
+    border-color: #1a9d87; /* Borde más oscuro para el botón al pasar el ratón */
+  }

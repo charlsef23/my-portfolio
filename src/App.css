@@ -1,40 +1,128 @@
+/* Fuente por defecto para toda la aplicación */
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif; /* Fuente por defecto */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el contenedor principal */
 .App {
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que la altura mínima sea igual a la altura de la ventana */
+  padding-top: 60px; /* Ajusta el relleno en la parte superior para que el contenido quede bien posicionado debajo del NavBar */
 }
 
+/* Modo oscuro */
 .dark-mode {
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #121212; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto claro */
 }
 
+/* Modo claro */
 .light-mode {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ffffff; /* Color de fondo claro */
+  color: #000000; /* Color de texto oscuro */
 }
 
-nav {
+/* Estilos para la barra de navegación */
+.navbar {
+  background: var(--navbar-background); /* Fondo del NavBar */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 50px; /* Altura del NavBar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar la barra de navegación */
+}
+
+/* Estilo del header dentro del NavBar */
+.navbar header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
+  align-items: center;
+  padding: 10px 20px; /* Relleno reducido */
+  max-width: 1100px;
+  margin: auto; /* Centra el contenido */
 }
 
-button {
+/* Estilo para el logo del NavBar */
+.navbar .logo a {
+  font-family: 'Righteous', sans-serif;
+  font-size: 20px; /* Tamaño del logo */
+  color: var(--logo-color); /* Color del logo */
+  text-decoration: none;
+}
+
+/* Estilo para el menú de navegación del NavBar */
+.navbar #nav {
+  display: flex;
+}
+
+.navbar #nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar #nav ul li {
+  margin: 0 10px; /* Espaciado reducido entre los elementos del menú */
+}
+
+.navbar #nav ul li a {
+  color: var(--nav-link-color); /* Color de los enlaces del menú */
+  text-decoration: none;
+  padding: 8px 12px; /* Ajuste del relleno */
+  border-radius: 5px; /* Bordes ligeramente redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover para los enlaces */
+.navbar #nav ul li a:hover {
+  background-color: var(--nav-link-hover-bg); /* Fondo de los enlaces al pasar el ratón */
+  color: var(--nav-link-hover-color); /* Color del texto al pasar el ratón */
+}
+
+/* Estilo para el botón de cambio de tema */
+.navbar .theme-toggle {
   background: none;
-  border: 1px solid white;
-  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 18px; /* Tamaño del botón de cambio de tema reducido */
   cursor: pointer;
-  color: white;
+  color: var(--theme-toggle-color); /* Color del botón de cambio de tema */
+  transition: color 0.3s ease; /* Transición suave para el color del botón de cambio de tema */
 }
 
-.home, .about, .projects, .contact {
+/* Estilos para las secciones principales */
+.home, .about, .skills, .projects, .contact {
   padding: 2rem;
+  max-width: 1200px; /* Limitar el ancho máximo para mejorar la legibilidad en pantallas grandes */
+  margin: auto;
+  flex: 1; /* Permite que las secciones se expandan para llenar el espacio disponible */
 }
 
+/* Estilo para el pie de página */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #333;
+  background-color: var(--footer-background); /* Fondo del pie de página */
   color: white;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar el pie de página */
+}
+
+/* Asegura que el pie de página esté siempre en la parte inferior */
+.App > footer {
+  margin-top: auto;
+}
+
+/* Variables para el modo claro y oscuro */
+.light-mode footer {
+  --footer-background: #333; /* Fondo oscuro para el pie de página en modo claro */
+}
+
+.dark-mode footer {
+  --footer-background: #1e1e1e; /* Fondo más oscuro para el pie de página en modo oscuro */
 }

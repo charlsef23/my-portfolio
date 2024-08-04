@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import './App.css';
 import { ThemeProvider } from './theme';
 import Curriculum from './components/Curriculum';
+import Skills from './components/Skills';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -28,11 +29,12 @@ function App() {
     <ThemeProvider darkMode={darkMode}>
       <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
         <NavBar toggleDarkMode={toggleDarkMode} />
-        <Home />
-        <About />
-        <Projects />
-        <Curriculum />
-        <Contact />
+        <Home darkMode={darkMode} />
+        <About darkMode={darkMode} />
+        <Skills darkMode={darkMode} />
+        <Projects darkMode={darkMode} /> {/* Pasar darkMode aquí */}
+        <Curriculum darkMode={darkMode} />
+        <Contact darkMode={darkMode} />
         <Footer />
       </div>
     </ThemeProvider>

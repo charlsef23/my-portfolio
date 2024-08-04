@@ -1,11 +1,156 @@
+/* Importar fuentes desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
-*{
+
+/* Estilos generales para todos los elementos */
+* {
   box-sizing: border-box;
-  font-family: 'Work Sans';
+  font-family: 'Work Sans', sans-serif; /* Fuente por defecto para todos los elementos */
   margin: 0;
   padding: 0;
 }
-html{
-  /* me permite deslizar cuando hago clic en los links del menu */
-  scroll-behavior: smooth;
+
+/* Estilo para el html y el cuerpo del documento */
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave en enlaces */
 }
+
+/* Estilo del cuerpo del documento */
+body {
+  line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+  color: #333; /* Color de texto predeterminado *//* Importar fuentes desde Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+  
+  /* Estilos generales para todos los elementos */
+  * {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif; /* Fuente por defecto para todos los elementos */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para el html y el cuerpo del documento */
+  html {
+    scroll-behavior: smooth; /* Desplazamiento suave en enlaces */
+  }
+  
+  /* Estilo del cuerpo del documento */
+  body {
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    color: var(--text-color); /* Color de texto predeterminado */
+    background-color: var(--background-color); /* Color de fondo predeterminado */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para los cambios de color */
+  }
+  
+  /* Mejora de la visibilidad del enlace en los navegadores modernos */
+  a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+  }
+  
+  /* Estilo para imágenes */
+  img {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+  }
+  
+  /* Asegura un estilo coherente para los botones */
+  button {
+    background: none;
+    border: none; /* Elimina el borde predeterminado del botón */
+    cursor: pointer; /* Indica que el botón es interactivo */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+  
+  /* Estilo para el contenedor principal */
+  /* Estilo para el contenedor principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que la altura mínima sea igual a la altura de la ventana */
+  padding-top: 80px; /* Aumenta el relleno en la parte superior para que el contenido quede bien posicionado debajo del NavBar */
+}
+  
+  /* Estilo para el pie de página */
+  footer {
+    margin-top: auto; /* Empuja el pie de página al final de la página */
+  }
+  
+  /* Estilos para el modo claro y oscuro */
+  .light-mode {
+    --background-color: #f5f5f5; /* Color de fondo para el modo claro */
+    --text-color: #333; /* Color del texto para el modo claro */
+  }
+  
+  .dark-mode {
+    --background-color: #1e2326; /* Color de fondo para el modo oscuro */
+    --text-color: #fff; /* Color del texto para el modo oscuro */
+  }
+  
+  /* Aplicación de variables de color */
+  body, .App {
+    background-color: var(--background-color); /* Aplicar el color de fondo */
+    color: var(--text-color); /* Aplicar el color del texto */
+  }
+  background-color: #f5f5f5; /* Color de fondo predeterminado */
+}
+
+/* Mejora de la visibilidad del enlace en los navegadores modernos */
+a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+/* Estilo para imágenes */
+img {
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+/* Asegura un estilo coherente para los botones */
+button {
+  background: none;
+  border: none; /* Elimina el borde predeterminado del botón */
+  cursor: pointer; /* Indica que el botón es interactivo */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+/* Estilo para el contenedor principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que la altura mínima sea igual a la altura de la ventana */
+}
+
+/* Estilo para el pie de página */
+footer {
+  margin-top: auto; /* Empuja el pie de página al final de la página */
+}
+
+/* Estilos para el modo claro y oscuro */
+.light-mode {
+  --background-color: #f5f5f5; /* Color de fondo para el modo claro */
+  --text-color: #333; /* Color del texto para el modo claro */
+}
+
+.dark-mode {
+  --background-color: #1e2326; /* Color de fondo para el modo oscuro */
+  --text-color: #fff; /* Color del texto para el modo oscuro */
+}
+
+/* Aplicación de variables de color */
+body, .App {
+  background-color: var(--background-color); /* Aplicar el color de fondo */
+  color: var(--text-color); /* Aplicar el color del texto */
+}
+
+/* Ajustes adicionales para la transición entre modos */
+:root {
+  --background-color: #f5f5f5; /* Color de fondo por defecto (modo claro) */
+  --text-color: #333; /* Color de texto por defecto (modo claro) */
+}
+
+/* Estilos de transición suaves para cambios de tema */
+body, .App {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para los cambios de color */
+}
+

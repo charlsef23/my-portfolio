@@ -1,45 +1,106 @@
-.contenedor-header{
-    background: #1e2326;
+/* Estilos generales para el NavBar */
+.navbar {
+    background: var(--navbar-background); /* Color de fondo del NavBar */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
-}
-.contenedor-header header{
-    max-width: 1100px;
-    margin: auto;
+    height: 50px; /* Altura reducida para un NavBar más pequeño */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  }
+  
+  /* Estilo del header dentro del NavBar */
+  .navbar header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Alinea el contenido a los extremos */
     align-items: center;
-    padding: 15px 20px;
-}
-.contenedor-header header .logo a{
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: #1CB698;
+    padding: 10px 20px; /* Relleno reducido */
+    max-width: 1100px;
+    margin: auto; /* Centra el contenido */
+  }
+  
+  /* Estilo para el logo */
+  .navbar .logo a {
+    font-family: 'Righteous', sans-serif;
+    font-size: 20px; /* Tamaño del logo reducido */
+    color: var(--logo-color); /* Color del logo */
     text-decoration: none;
-}
-.contenedor-header header ul{
+  }
+  
+  /* Estilo para el menú de navegación */
+  .navbar #nav {
+    display: flex;
+  }
+  
+  .navbar #nav ul {
     display: flex;
     list-style: none;
-}
-.contenedor-header header nav ul li a{
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar #nav ul li {
+    margin: 0 10px; /* Espaciado reducido entre los elementos del menú */
+  }
+  
+  .navbar #nav ul li a {
+    color: var(--nav-link-color); /* Color de los enlaces del menú */
     text-decoration: none;
-}
-.contenedor-header header nav ul li a:hover{
-    color: #1CB698;
-}
-.nav-responsive{
-    background-color: #1CB698;
-    color:#fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 8px 12px; /* Ajuste del relleno */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+  }
+  
+  /* Efecto hover para los enlaces */
+  .navbar #nav ul li a:hover {
+    background-color: var(--nav-link-hover-bg); /* Fondo de los enlaces al pasar el ratón */
+    color: var(--nav-link-hover-color); /* Color del texto al pasar el ratón */
+  }
+  
+  /* Estilo para el botón de cambio de tema */
+  .navbar .theme-toggle {
+    background: none;
+    border: none;
+    font-size: 18px; /* Tamaño del botón de cambio de tema reducido */
     cursor: pointer;
-    display: none;
-}
+    color: var(--theme-toggle-color); /* Color del botón de cambio de tema */
+    transition: color 0.3s ease; /* Transición suave para el color del botón de tema */
+  }
+  
+  /* Modos claros y oscuros */
+  .light-mode .navbar {
+    --navbar-background: #ffffff; /* Fondo claro para el modo claro */
+  }
+  
+  .light-mode .navbar .logo a {
+    --logo-color: #333; /* Color del logo en modo claro */
+  }
+  
+  .light-mode #nav ul li a {
+    --nav-link-color: #333; /* Color de los enlaces en modo claro */
+    --nav-link-hover-bg: rgba(0, 0, 0, 0.1); /* Fondo de los enlaces al pasar el ratón en modo claro */
+    --nav-link-hover-color: #333; /* Color del texto al pasar el ratón en modo claro */
+  }
+  
+  .light-mode .theme-toggle {
+    --theme-toggle-color: #333; /* Color del botón de tema en modo claro */
+  }
+  
+  .dark-mode .navbar {
+    --navbar-background: #1e2326; /* Fondo oscuro para el modo oscuro */
+  }
+  
+  .dark-mode .navbar .logo a {
+    --logo-color: #1cb698; /* Color del logo en modo oscuro */
+  }
+  
+  .dark-mode #nav ul li a {
+    --nav-link-color: #fff; /* Color de los enlaces en modo oscuro */
+    --nav-link-hover-bg: rgba(28, 182, 152, 0.2); /* Fondo de los enlaces al pasar el ratón en modo oscuro */
+    --nav-link-hover-color: #1cb698; /* Color del texto al pasar el ratón en modo oscuro */
+  }
+  
+  .dark-mode .theme-toggle {
+    --theme-toggle-color: #fff; /* Color del botón de tema en modo oscuro */
+  }
