@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 import { ThemeProvider } from './theme';
+import Curriculum from './components/Curriculum';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -30,6 +31,7 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Curriculum />
         <Contact />
         <Footer />
       </div>

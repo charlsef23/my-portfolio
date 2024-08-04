@@ -1,4 +1,5 @@
 import React from 'react';
+import './NavBar.css';
 
 const NavBar = ({ toggleDarkMode }) => {
   return (
@@ -6,7 +7,7 @@ const NavBar = ({ toggleDarkMode }) => {
            <div class="contenedor-header">
         <header>
           <div class="logo">
-            <a href="#home">Carlos</a>
+            <a href="#Home">Carlos</a>
           </div>
             <nav id="nav">
                 <ul>
