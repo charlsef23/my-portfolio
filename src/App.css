@@ -16,8 +16,8 @@
 
 /* Modo oscuro */
 .dark-mode {
-  background-color: #121212; /* Color de fondo oscuro */
-  color: #ffffff; /* Color de texto claro */
+  background-color: black; /* Color de fondo oscuro */
+  color: white; /* Color de texto claro */
 }
 
 /* Modo claro */
@@ -120,7 +120,7 @@ footer {
 
 /* Variables para el modo claro y oscuro */
 .light-mode footer {
-  --footer-background: #333; /* Fondo oscuro para el pie de página en modo claro */
+  --footer-background: black; /* Fondo oscuro para el pie de página en modo claro */
 }
 
 .dark-mode footer {

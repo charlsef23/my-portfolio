@@ -1,11 +1,11 @@
 .about {
-    background-color: #1e2326; /* Fondo oscuro para el modo oscuro */
+    background-color: black; /* Fondo oscuro para el modo oscuro */
     color: #fff;
     padding: 50px 20px;
   }
   
   .about.light-mode {
-    background-color: #f0f0f0; /* Fondo claro para el modo claro */
+    background-color: white; /* Fondo claro para el modo claro */
     color: #333;
   }
   
@@ -104,10 +104,26 @@
     transition: .3s;
   }
   
+  .about.light-mode .fila .contenedor-intereses .interes {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+  
   .about .fila .contenedor-intereses .interes:hover {
     background-color: #1CB698;
   }
   
+  .about.light-mode .fila .contenedor-intereses .interes:hover {
+    background-color: #1CB698;
+}
   .about .fila .contenedor-intereses .interes i {
     font-size: 30px;
     margin-bottom: 10px;
@@ -115,12 +131,14 @@
   }
   
   .about.light-mode .fila .contenedor-intereses .interes i {
-    color: #333; /* Color de los iconos en modo claro */
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black; /* Color de los iconos en modo claro */
   }
   
   .about button {
     cursor: pointer;
-    background-color: #1CB698; /* Fondo del botón */
+    background-color: #252A2E; /* Fondo del botón */
     border: 2px solid #1CB698; /* Borde del botón */
     width: fit-content;
     display: block;
@@ -150,6 +168,6 @@
   }
   
   .about button:hover {
-    background-color: #1a9d87; /* Fondo más oscuro para el botón al pasar el ratón */
+    background-color: #252A2E; /* Fondo más oscuro para el botón al pasar el ratón */
     border-color: #1a9d87; /* Borde más oscuro para el botón al pasar el ratón */
   }

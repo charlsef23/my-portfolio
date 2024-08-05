@@ -3,91 +3,91 @@ import './Skills.css';
 
 const Skills = () => {
   return (
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
+    <section className="skills" id="skills">
+        <div className="contenido-seccion">
             <h2>Skills</h2>
-            <div class="fila">
-                <div class="col">
+            <div className="fila">
+                <div className="col">
                     <h3>Technical Skills</h3>
-                    <div class="skill">
+                    <div className="skill">
                         <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>75%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div className="skill">
                         <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>95%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div className="skill">
                         <span>Photoshop</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>95%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div className="skill">
                         <span>Wordpress</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>81%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <span>Drupa</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                    <div className="skill">
+                        <span>Drupal</span>
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>55%</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div className="col">
                     <h3>Professional Skills</h3>
-                    <div class="skill">
+                    <div className="skill">
                         <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>80%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div className="skill">
                         <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>100%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div className="skill">
                         <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>99%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div className="skill">
                         <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>65%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                    <div className="skill">
+                        <span>Project Management</span>
+                        <div className="barra-skill">
+                            <div className="progreso">
                                 <span>94%</span>
                             </div>
                         </div>
@@ -99,8 +99,7 @@ const Skills = () => {
   );
 };
 
-
-//Funcion que aplica las animaciones de las habilidades
+// Función que aplica las animaciones de las habilidades
 function efectoHabilidades(){
   var skills = document.getElementById("skills");
   var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
@@ -119,9 +118,9 @@ function efectoHabilidades(){
   }
 }
 
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
+// Detecto el scrolling para aplicar la animación de la barra de habilidades
 window.onscroll = function(){
   efectoHabilidades();
-} 
+}
+
 export default Skills;
