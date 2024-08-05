@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import map from './ubicacion.png';
 
 const Contact = () => {
   return (
@@ -7,7 +8,6 @@ const Contact = () => {
       <div className="contenido-seccion">
         <h2>CONTACTO</h2>
         <div className="fila">
-          {/* Formulario */}
           <div className="col">
             <input type="text" placeholder="Tú Nombre" />
             <input type="number" placeholder="Número telefónico" />
@@ -20,7 +20,7 @@ const Contact = () => {
             </button>
           </div>
           <div className="col">
-            <img src="./ubication.png" alt="Ubicación" />
+            <img src={map} alt="Map" /> 
             <div className="info">
               <ul>
                 <li>

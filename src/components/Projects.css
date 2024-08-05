@@ -4,7 +4,7 @@
   }
   
   .portfolio.dark-mode {
-    background-color: #252A2E; /* Color de fondo oscuro en modo oscuro */
+    background-color: black; /* Color de fondo oscuro en modo oscuro */
     color: #ffffff;
   }
   

@@ -169,7 +169,7 @@
 
 /* Modificaciones para el modo claro */
 .light-mode .skills {
-    background-color: #f0f0f0; /* Fondo claro para modo claro */
+    background-color: white; /* Fondo claro para modo claro */
     color: #000; /* Color de texto en modo claro */
 }
 
