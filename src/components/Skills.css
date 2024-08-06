@@ -83,7 +83,7 @@
 }
 @keyframes javascript {
     0% { width: 0%; }
-    100% { width: 75%; }
+    100% { width: 80%; }
 }
 
 .skills .skill .htmlcss {
@@ -95,31 +95,34 @@
     100% { width: 95%; }
 }
 
-.skills .skill .photoshop {
+.skills .skill .react {
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s react forwards;
+    -webkit-animation: 2s react forwards;
 }
-@keyframes photoshop {
+@keyframes react {
     0% { width: 0%; }
-    100% { width: 95%; }
+    100% { width: 75%; }
 }
 
-.skills .skill .wordpress {
+.skills .skill .basededatos {
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 2s basededatos forwards;
+    -webkit-animation: 2s basededatos forwards;
 }
-@keyframes wordpress {
+@keyframes basededatos {
     0% { width: 0%; }
     100% { width: 81%; }
 }
 
-.skills .skill .drupal {
+.skills .skill .git {
     width: 0%;
-    animation: 2s drupal forwards;
+    animation: 2s git forwards;
+    -webkit-animation: 2s git forwards;
 }
-@keyframes drupal {
+@keyframes git {
     0% { width: 0%; }
-    100% { width: 55%; }
+    100% { width: 100%; }
 }
 
 .skills .skill .comunicacion {

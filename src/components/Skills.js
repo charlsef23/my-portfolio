@@ -10,10 +10,10 @@ const Skills = () => {
                 <div className="col">
                     <h3>Technical Skills</h3>
                     <div className="skill">
-                        <span>Javascript</span>
+                        <span>JavaScript</span>
                         <div className="barra-skill">
                             <div className="progreso">
-                                <span>75%</span>
+                                <span>80%</span>
                             </div>
                         </div>
                     </div>
@@ -26,15 +26,15 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="skill">
-                        <span>Photoshop</span>
+                        <span>React</span>
                         <div className="barra-skill">
                             <div className="progreso">
-                                <span>95%</span>
+                                <span>75%</span>
                             </div>
                         </div>
                     </div>
                     <div className="skill">
-                        <span>Wordpress</span>
+                        <span>Base de Datos</span>
                         <div className="barra-skill">
                             <div className="progreso">
                                 <span>81%</span>
@@ -42,10 +42,10 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="skill">
-                        <span>Drupal</span>
+                        <span>Git & GitHub</span>
                         <div className="barra-skill">
                             <div className="progreso">
-                                <span>55%</span>
+                                <span>100%</span>
                             </div>
                         </div>
                     </div>
@@ -107,9 +107,9 @@ function efectoHabilidades(){
       let habilidades = document.getElementsByClassName("progreso");
       habilidades[0].classList.add("javascript");
       habilidades[1].classList.add("htmlcss");
-      habilidades[2].classList.add("photoshop");
-      habilidades[3].classList.add("wordpress");
-      habilidades[4].classList.add("drupal");
+      habilidades[2].classList.add("react");
+      habilidades[3].classList.add("basededatos");
+      habilidades[4].classList.add("git");
       habilidades[5].classList.add("comunicacion");
       habilidades[6].classList.add("trabajo");
       habilidades[7].classList.add("creatividad");
