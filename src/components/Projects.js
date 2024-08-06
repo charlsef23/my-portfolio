@@ -3,9 +3,9 @@ import './Projects.css'; // Asegúrate de importar el CSS correspondiente
 
 const Projects = ({ darkMode }) => {
   return (
-    <section id="portfolio" className={`portfolio ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+    <section id="projects" className={`projects ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="contenido-seccion">
-        <h2>PORTFOLIO</h2>
+        <h2>Projects</h2>
         <div className="galeria">
           <div className="proyecto">
             <img src="img/p1.jpg" alt="Proyecto 1" />

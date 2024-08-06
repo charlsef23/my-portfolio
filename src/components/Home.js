@@ -10,7 +10,7 @@ const Home = () => {
           <img src={heroImage} alt="Hero" />
         </div>
         <h1>CARLOS ESTEVE</h1>
-        <h2>Ingeniero de Software - Experto UI/UX</h2>
+        <h2>Desarrollador Web - Full Stack </h2>
         <div className="redes">
           <a href="https://www.instagram.com/carlosesteve23/"><i className="fa-brands fa-instagram"></i></a>
           <a href="https://x.com/Charlsef23"><i className="fa-brands fa-x"></i></a>

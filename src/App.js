@@ -31,8 +31,8 @@ function App() {
         <NavBar toggleDarkMode={toggleDarkMode} />
         <Home darkMode={darkMode} />
         <About darkMode={darkMode} />
+        <Projects darkMode={darkMode} />
         <Skills darkMode={darkMode} />
-        <Projects darkMode={darkMode} /> {/* Pasar darkMode aquí */}
         <Curriculum darkMode={darkMode} />
         <Contact darkMode={darkMode} />
         <Footer />

@@ -7,7 +7,9 @@ const About = ({ darkMode }) => {
       <div className="contenido-seccion">
         <h2>About</h2>
         <p>
-          <span>Hi, I'm Carlos Esteve.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.
+          <span>Hi, I'm Carlos Esteve.</span> un apasionado freelancer iniciando mi camino en el trabajo independiente. Con habilidades y experiencia en Desarrollo Web - Full Stack, he decidido aventurarme en el freelancing.
+          <br></br>
+          Mi objetivo es ofrecer soluciones creativas y de alta calidad, ayudando a mis clientes a alcanzar sus metas. Me enorgullece adaptarme rápidamente a nuevas tecnologías y tendencias, y siempre busco mejorar mis habilidades.
         </p>
 
         <div className="fila">

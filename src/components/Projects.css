@@ -1,50 +1,50 @@
-.portfolio {
+.projects {
     padding: 50px 20px;
     min-height: 100vh; /* Asegura que la sección ocupe al menos toda la altura de la ventana */
   }
   
-  .portfolio.dark-mode {
+  .projects.dark-mode {
     background-color: black; /* Color de fondo oscuro en modo oscuro */
     color: #ffffff;
   }
   
-  .portfolio.light-mode {
+  .projects.light-mode {
     background-color: #ffffff; /* Fondo blanco en modo claro */
     color: #000000;
   }
   
-  .portfolio .contenido-seccion {
+  .projects .contenido-seccion {
     max-width: 1100px;
     margin: auto;
   }
   
-  .portfolio h2 {
+  .projects h2 {
     font-size: 48px;
     font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
   }
   
-  .portfolio .galeria {
+  .projects .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   
-  .portfolio .galeria .proyecto {
+  .projects .galeria .proyecto {
     position: relative;
     max-width: 340px;
     margin: 10px;
     cursor: pointer;
   }
   
-  .portfolio .galeria .proyecto img {
+  .projects .galeria .proyecto img {
     width: 100%;
     display: block;
     border-radius: 10px; /* Añade un radio de borde para las imágenes */
   }
   
-  .portfolio .galeria .proyecto .overlay {
+  .projects .galeria .proyecto .overlay {
     position: absolute;
     top: 0;
     width: 100%;
@@ -62,15 +62,15 @@
     border-radius: 10px; /* Asegura que el overlay tenga bordes redondeados */
   }
   
-  .portfolio .galeria .proyecto .overlay h3 {
+  .projects .galeria .proyecto .overlay h3 {
     margin-bottom: 20px;
     transition: margin-bottom 1s;
   }
   
-  .portfolio .galeria .proyecto .overlay:hover {
+  .projects .galeria .proyecto .overlay:hover {
     opacity: 1;
   }
   
-  .portfolio .galeria .proyecto .overlay:hover h3 {
+  .projects .galeria .proyecto .overlay:hover h3 {
     margin-bottom: 0;
   }
