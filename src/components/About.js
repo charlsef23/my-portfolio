@@ -17,11 +17,10 @@ const About = ({ darkMode }) => {
           <div className="col">
             <h3>Datos Personales</h3>
             <ul>
-              <li><strong>Birthday</strong> 09-02-2003</li>
-              <li><strong>Phone</strong> <a href="tel:+34664686772">+34 664686772</a></li>
+              <li><strong>Cumpleaños</strong> 09-02-2003</li>
+              <li><strong>Teléfono</strong> <a href="tel:+34664686772">+34 664686772</a></li>
               <li><strong>Email</strong> <a href="mailto:charlsef23@icloud.com">charlsef23@icloud.com</a></li>
-              <li><strong>Website</strong> www.CarlosEsteve.com</li>
-              <li><strong>Address</strong> Calle José Abascal 28, Madrid</li>
+              <li><strong>Dirección</strong> Calle José Abascal 28, Madrid</li>
               <li><strong>Cargo</strong> <span>FREELANCE</span></li>
             </ul>
           </div>
