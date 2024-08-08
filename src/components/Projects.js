@@ -5,7 +5,7 @@ const Projects = ({ darkMode }) => {
   return (
     <section id="projects" className={`projects ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="contenido-seccion">
-        <h2>Projects</h2>
+        <h2>Proyectos</h2>
         <div className="galeria">
           <div className="proyecto">
             <img src="img/p1.jpg" alt="Proyecto 1" />
