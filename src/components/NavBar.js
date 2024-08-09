@@ -10,9 +10,9 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#home">INICIO</a></li>
+            <li><a href="#about">SOBRE MI</a></li>
+            <li><a href="#projects">PROYECTOS</a></li>
             <li><a href="#skills">SKILLS</a></li>
             <li><a href="#curriculum">CURRICULUM</a></li>
             <li><a href="#contacto">CONTACTO</a></li>
