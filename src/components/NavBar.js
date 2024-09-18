@@ -19,10 +19,10 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
           </ul>
         </nav>
         <button className="theme-toggle" onClick={toggleDarkMode}>
-          {darkMode ? (
-            <i className="fa-solid fa-sun"></i> // Icono del sol para modo oscuro
-          ) : (
-            <i className="fa-solid fa-moon"></i> // Icono de la luna para modo claro
+            {darkMode ? (
+              <i className="fa-solid fa-sun"></i>
+                ) : (
+              <i className="fa-solid fa-moon"></i>
           )}
         </button>
       </header>
